@@ -1,4 +1,4 @@
-/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto&display=swap");
 *,
 *::before,
 *::after {
@@ -29,16 +29,16 @@ ol[role="list"] {
 html:focus-within {
   scroll-behavior: smooth;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Set core body defaults */
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-color: azure;
-
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 
@@ -83,42 +83,87 @@ header {
   width: 100vw;
   display: grid;
   place-items: center;
+  background-color: #333333;
 }
 .headerText {
   display: flex;
   flex-direction: column;
-  color: rgb(32, 32, 32);
+  color: rgb(255, 255, 255);
   font-size: 4vw;
   padding: 2ch;
   border-radius: 2rem;
+  position: relative;
   animation: loadin 2s ease-in;
 }
 .headerText > b {
-  color: purple;
+  color: #e31b6d;
 }
 
 .headerA,
 .headerA:visited {
-  border: 10px solid blue !important;
-  border-radius: 2rem;
-  color: black;
+  border: 0.1em solid white;
+  color: white;
   font-size: 0.5em !important;
   text-decoration: none;
-  padding: 0 2ch;
+  padding: 0 1ch;
   width: max-content;
-  margin: 0 auto 0 auto;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.5s, border 0.5s;
+}
+.headerA > span,
+.headerA:visited > span {
+  font-size: 1em;
+  margin-left: 2rem;
+  transition: transform 0.5s;
+}
+.headerA:hover {
+  background-color: aqua;
+  border: 0.1em solid aqua;
+}
+.headerA:hover > span {
+  transform: rotate(90deg);
 }
 
 main {
-  height: 100vh;
   width: 100vw;
+}
+
+nav {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 10vw;
+  background-color: #333333;
+  border-bottom: 0.2em solid aqua;
+  position: sticky;
+  top: 0;
+}
+a.nav {
+  height: 100%;
+  font-size: 2vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a.active {
+  color: #e31b6d;
+}
+.main {
+  height: 100vh;
+  width: 100%;
 }
 
 @keyframes loadin {
   0% {
-    opacity: 0;
+    bottom: -500px;
   }
   100% {
-    opacity: 1;
+    bottom: 0;
   }
 }

@@ -5,18 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   <title>William Short</title>
+  <script src="./index.js"></script>
 </head>
 <body>
-<header>
+<header id="home">
   <div class="headerText">
     <b>Hello!</b>
     <span>I'm William Short.</span>
     <span>A fullstack engineer.</span>
-    <a href="#portfolio" class="headerA">View projects</a>
+    <a href="#about" class="headerA">About me
+      <span class="material-icons-outlined">
+          arrow_forward
+      </span>
+    </a>
   </div>
 </header>
-<main id="portfolio"></main>
-<footer></footer>
+<nav>
+  <a href="#home" class="nav home">Home</a>
+  <a href="#about" class="nav about">About</a>
+  <a href="#portfolio" class="nav portfolio">Portfolio</a>
+  <a href="#contact" class="nav contact">Contact</a>
+</nav>
+<main >
+  <div class="main" id="about"></div>
+  <div class="main" id="portfolio"></div>
+  <div class="main" id="contact"></div>
+  <footer></footer>
+</main>
+
 </body>
 </html>
