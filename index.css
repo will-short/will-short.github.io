@@ -40,6 +40,7 @@ body {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  background-color: rgb(250, 250, 250);
 }
 
 /* A elements that don't have a class get default styles */
@@ -93,10 +94,10 @@ header {
   padding: 2ch;
   border-radius: 2rem;
   position: relative;
-  animation: loadin 2s ease-in;
+  animation: loadin 2s linear;
 }
 .headerText > b {
-  color: #e31b6d;
+  color: #ff1e7c;
 }
 
 .headerA,
@@ -132,7 +133,7 @@ main {
 
 nav {
   height: 5vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -152,18 +153,115 @@ a.nav {
   transition: color 0.3s;
 }
 a.active {
-  color: #e31b6d;
+  color: #ff1e7c;
 }
 .main {
   height: 100vh;
   width: 100%;
 }
-
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  align-content: center;
+  justify-items: center;
+  row-gap: 7rem;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 400px;
+  position: relative;
+}
+.circle {
+  height: 15rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: aqua;
+  display: grid;
+  place-items: center;
+  font-size: 6rem;
+  font-weight: bold;
+}
+.left h2 {
+  color: rgb(22, 22, 22);
+}
+.left p {
+  font-size: 0.9rem;
+  color: rgb(44, 44, 44);
+}
+.right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  position: relative;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+.item {
+  background-color: rgb(0, 151, 151);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  width: 0;
+}
+.line {
+  height: 2px;
+  grid-column: span 2;
+  background-color: aqua;
+}
 @keyframes loadin {
   0% {
-    bottom: -500px;
+    opacity: 0;
   }
   100% {
-    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes anim1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 110%;
+  }
+}
+@keyframes anim2 {
+  0% {
+    opacity: 0;
+    left: -10%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes anim3 {
+  0% {
+    opacity: 0;
+    right: -10%;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+@keyframes anim4 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
