@@ -1,71 +1,268 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-  <link rel="icon" href="/favicon.ico?v=2" />
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Landed by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
 
-  <title>William Short</title>
-  <script src="./index.js"></script>
-</head>
-<body>
-<header id="home">
-  <div class="headerText">
-    <b>Hello!</b>
-    <span>I'm William Short.</span>
-    <span>A fullstack engineer.</span>
-    <a href="#about" class="headerA">About me
-      <span class="material-icons-outlined">
-          arrow_forward
-      </span>
-    </a>
-  </div>
-</header>
-<nav>
-  <a href="#home" class="nav home">Home</a>
-  <a href="#about" class="nav about">About</a>
-  <a href="#portfolio" class="nav portfolio">Portfolio</a>
-  <a href="#contact" class="nav contact">Contact</a>
-</nav>
-<main >
-  <div class="main" id="about">
-    <div class="line"></div>
-    <div class="left">
-      <div class="circle">W/S</div>
-      <h2>Who am I?</h2>
-      <p>I am a passionate software developer with over 10 years of experience working with robots. Over the past year I've been working to transfer my passion of programming into a becoming full stack software developer. I enjoy the entire process of building apps from designing and building a road map of were I want to go to being able to hit those goals and have a product I'm proud of.</p>
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">William Short</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Layouts</a>
+								<ul>
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Option 1</a></li>
+											<li><a href="#">Option 2</a></li>
+											<li><a href="#">Option 3</a></li>
+											<li><a href="#">Option 4</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
 
-    </div>
-    <div class="right">
-      <h2>Skills:</h2>
-      <div class="skills">
-        <div class="item">CSS</div>
-        <div class="item">HTML</div>
-        <div class="item">JavaScript</div>
-        <div class="item">Express</div>
-        <div class="item">Sequelize</div>
-        <div class="item">React</div>
-        <div class="item">Pug</div>
-        <div class="item">Git</div>
-        <div class="item">SQL</div>
-        <div class="item">Python</div>
-        <div class="item">Flask</div>
-        <div class="item">SQLAlchemy</div>
-        <div class="item">Alembic</div>
-        <div class="item">Redux</div>
-        <div class="item">PostgreSQL</div>
-      </div>
-    </div>
-    <div class="line"></div>
-  </div>
-  <div class="main" id="portfolio"></div>
-  <div class="main" id="contact"></div>
-  <footer></footer>
-</main>
+			<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h1>Hello!</h1>
+							<h2>I'm <em>William Short.</em><br />
+								A fullstack engineer.</h2>
+						</header>
+						<span class="image"><img src="images/profilePic.png" alt="" /></span>
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
 
-  
-</body>
+			<!-- One -->
+				<section id="one" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="images/banner4.png" alt="" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								<div class="col-4 col-12-medium">
+									<header>
+										<h2>Who am I?</h2>
+										<p>I am a passionate software developer with over 10 years of experience working with robots.
+											 Over the past year I've been working to transfer my passion of programming into a becoming full stack software developer.
+											 I enjoy the entire process of building apps from designing and building a road map of were I want to go to being able to hit those goals and have a product I'm proud of.</p>
+									</header>
+								</div>
+								<div class="col-4 col-12-medium">
+								<header>
+									<h2>Skills and technologies</h2>
+									<p>CSS,
+										HTML,
+										JavaScript,
+										Express,
+										Sequelize,
+										React,
+										Pug,
+										Git,
+										SQL,
+										Python,
+										Flask,
+										SQLAlchemy,
+										Alembic,
+										Redux,
+										PostgreSQL,
+									Docker</p>
+								</header>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/project1.PNG" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Indie-Go</h2>
+							<p>An Etsy clone for Indie games, lets users browse over 400 preseeded games, create game listings and leave reviews.</p>
+						</header>
+						<header>
+							<h2>Technologies used:</h2>
+							<p>Javascript, React / Redux, Python, Flask, AWS S3, PostgreSQL, CSS3, HTML5, SQLAlchemy, Alembic, Docker</p>
+						</header>
+						<ul class="actions">
+							<li><a href="https://github.com/will-short/Indie-Go" target="_blank" class="button">Github Repo</a></li>
+							<li><a href="https://indie-go.herokuapp.com/" target="_blank" class="button">Live Site</a></li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/project2.PNG" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Harmony</h2>
+							<p>A discord clone allowing users to chat with each other in real time in channels and servers.</p>
+						</header>
+						<header>
+							<h2>Technologies used:</h2>
+							<p>Javascript,  React / Redux, Python, Flask, AWS S3, PostgreSQL, Web sockets, SQLAlchemy, Alembic, Docker</p>
+						</header>
+						<ul class="actions">
+							<li><a href="https://github.com/nummyrice/Harmony-discord-clone" target="_blank" class="button">Github Repo</a></li>
+							<li><a href="https://harmony-io.herokuapp.com/" target="_blank" class="button">Live Site</a></li>
+						</ul>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>
+
+				<section id="four" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/project3.PNG" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Barista</h2>
+							<p>An Untapped clone where users are able to see local coffee shops and post about drinks they are having.</p>
+						</header>
+						<header>
+							<h2>Technologies used:</h2>
+							<p>Javascript,  React / Redux, Express, Node.js, PostgreSQL, Google Maps API, Sequelize</p>
+						</header>
+						<ul class="actions">
+							<li><a href="https://github.com/will-short/Barista" target="_blank" class="button">Github Repo</a></li>
+							<li><a href="https://barista-project.herokuapp.com/" target="_blank" class="button">Live Site</a></li>
+						</ul>
+					</div>
+					<a href="#five" class="goto-next scrolly">Next</a>
+				</section>
+
+				<section id="five" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/project4.PNG" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>TODO</h2>
+							<p>A remember the milk clone catered to programmers. TODO lets users create groups, add members and set tasks for members.</p>
+						</header>
+						<header>
+							<h2>Technologies used:</h2>
+							<p>Javascript, React / Redux, Express, Node.js, PostgreSQL, Sequelize, Pug(Jade)</p>
+						</header>
+						<ul class="actions">
+							<li><a href="https://github.com/nummyrice/Harmony-discord-clone" target="_blank" class="button">Github Repo</a></li>
+							<li><a href="https://harmony-io.herokuapp.com/" target="_blank" class="button">Live Site</a></li>
+						</ul>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Four -->
+				<section id="five" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+							<h2>Accumsan sed tempus adipiscing blandit</h2>
+							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+						</header>
+						<div class="box alt">
+							<div class="row gtr-uniform">
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-chart-area"></span>
+									<h3>Ipsum sed commodo</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-comment"></span>
+									<h3>Eleifend lorem ornare</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-flask"></span>
+									<h3>Cubilia cep lobortis</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-paper-plane"></span>
+									<h3>Non semper interdum</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-file"></span>
+									<h3>Odio laoreet accumsan</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-lock"></span>
+									<h3>Massa arcu accumsan</h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+							</div>
+						</div>
+						<footer class="major">
+							<ul class="actions special">
+								<li><a href="#" class="button">Magna sed feugiat</a></li>
+							</ul>
+						</footer>
+					</div>
+				</section>
+
+			<!-- Five -->
+				<section id="five" class="wrapper style2 special fade">
+					<div class="container">
+						<header>
+							<h2>Magna faucibus lorem diam</h2>
+							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+						</header>
+						<form method="post" action="#" class="cta">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
