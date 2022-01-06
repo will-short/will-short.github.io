@@ -212,3 +212,15 @@
 
   $banner._parallax();
 })(jQuery);
+window.onload = () => {
+  document.querySelector("#contact-form").onsubmit = (e) => {
+    e.target.submit();
+    e.target.reset();
+    let message = document.getElementById("sent");
+    message.style.animation = "fade 4s forwards linear";
+    setTimeout(() => {
+      message.style.animation = "none";
+    }, 4000);
+    return false;
+  };
+};
