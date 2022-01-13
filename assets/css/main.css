@@ -865,11 +865,10 @@ body.landing.is-preload:after {
   width: 33.33333%;
 }
 #one .row > .col-4 {
-  display: grid;
-  place-items: center;
   margin: 0;
-  width: 45%;
+  width: 60%;
 }
+
 #one .row {
   display: flex;
   justify-content: center;
@@ -879,6 +878,22 @@ body.landing.is-preload:after {
 }
 #one .content {
   padding-top: 1em;
+}
+#banner .dev-icons i {
+  animation: dropin 2s ease 1 forwards;
+  animation-delay: calc(var(--order) * 200ms);
+  opacity: 0;
+}
+@keyframes dropin {
+  20% {
+    opacity: 0;
+    transform: translatey(-20%);
+  }
+  30%,
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
 }
 
 .row > .off-4 {
@@ -3294,6 +3309,7 @@ input[type="button"]:disabled,
   display: flex;
   gap: 0.6em;
   flex-wrap: wrap;
+  margin-top: 2em;
 }
 .dev-icons-project {
   font-size: 3em;
@@ -3301,6 +3317,9 @@ input[type="button"]:disabled,
   gap: 0.3em;
   flex-wrap: wrap;
   margin: 1em 0;
+}
+#banner .content .image {
+  margin-right: 15%;
 }
 
 .spotlight.right .content {
